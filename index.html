@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Materi lengkap Bahasa Indonesia kelas XI semester 1 tentang teks berita, dilengkapi rangkuman, contoh, dan latihan soal interaktif.">
+  <title>Ruang Belajar — Teks Berita Kelas XI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="reading-progress" id="readingProgress"></div>
+  <header class="topbar">
+    <a class="brand" href="#beranda" aria-label="Ruang Belajar">
+      <span class="brand-mark">RB</span>
+      <span>RUANG<span class="brand-light">BELAJAR</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">☰</button>
+    <nav class="topnav" id="topNav">
+      <a href="#materi">Materi</a>
+      <a href="#contoh">Contoh</a>
+      <a href="#latihan">Latihan Soal</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> PERSIAPAN UAS • KELAS XI • SEMESTER 1</div>
+        <h1>Kenali berita.<br><em>Pahami dunia.</em></h1>
+        <p class="hero-desc">Panduan belajar lengkap Bahasa Indonesia tentang teks berita. Pelajari konsep, pahami contoh, lalu uji kemampuanmu melalui latihan interaktif.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#materi">Mulai Belajar <span>↗</span></a>
+          <a class="btn btn-ghost" href="#latihan">Kerjakan Kuis</a>
+        </div>
+        <div class="hero-meta"><span>📚 16 bagian materi</span><span>✦</span><span>📝 15 soal latihan</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi surat kabar dan berita">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="news-card">
+          <div class="paper-top"><span>HARIAN PELAJAR</span><span>EDISI BELAJAR</span></div>
+          <div class="paper-rule"></div>
+          <div class="paper-kicker">KABAR UTAMA</div>
+          <div class="paper-title">FAKTA<br>DI BALIK<br>SEBUAH BERITA</div>
+          <div class="paper-image"><span>✦</span><span>▤</span><span>✦</span></div>
+          <div class="paper-lines"><i></i><i></i><i></i><i></i></div>
+          <div class="paper-bottom">AKTUAL • FAKTUAL • OBJEKTIF</div>
+        </div>
+        <div class="floating-note note-top">5W + 1H <b>✓</b></div>
+        <div class="floating-note note-bottom">Belajar lebih terarah <b>✦</b></div>
+      </div>
+    </section>
+
+    <section class="quick-stats">
+      <div><strong>01</strong><span>Konsep dasar</span></div>
+      <div><strong>02</strong><span>Struktur & bahasa</span></div>
+      <div><strong>03</strong><span>Analisis berita</span></div>
+      <div><strong>04</strong><span>Evaluasi mandiri</span></div>
+    </section>
+
+    <section class="content-layout" id="materi">
+      <aside class="sidebar" id="sidebar">
+        <div class="side-heading">PETA MATERI <span>XI</span></div>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi"></div>
+        <nav id="sideNav" class="side-nav">
+          <a class="active" href="#bab1"><span>01</span> Memahami teks berita</a>
+          <a href="#bab2"><span>02</span> Unsur 5W + 1H</a>
+          <a href="#bab3"><span>03</span> Struktur teks berita</a>
+          <a href="#bab4"><span>04</span> Pola penulisan berita</a>
+          <a href="#bab5"><span>05</span> Kaidah kebahasaan</a>
+          <a href="#bab6"><span>06</span> Fakta dan opini</a>
+          <a href="#bab7"><span>07</span> Nilai berita</a>
+          <a href="#bab8"><span>08</span> Jenis-jenis berita</a>
+          <a href="#bab9"><span>09</span> Sumber & narasumber</a>
+          <a href="#bab10"><span>10</span> Menyusun teks berita</a>
+          <a href="#bab11"><span>11</span> Menyunting berita</a>
+          <a href="#bab12"><span>12</span> Berita dan teks lain</a>
+          <a href="#bab13"><span>13</span> Contoh & analisis</a>
+          <a href="#bab14"><span>14</span> Jebakan soal</a>
+          <a href="#bab15"><span>15</span> Hafalan cepat</a>
+        </nav>
+        <div class="side-progress">
+          <div class="progress-label"><span>Progres membaca</span><b id="progressText">0%</b></div>
+          <div class="progress-track"><i id="sideProgress"></i></div>
+          <small>Tandai materi yang sudah kamu pelajari.</small>
+          <button class="reset-progress" id="resetProgress">Atur ulang progres</button>
+        </div>
+      </aside>
+
+      <div class="lesson">
+        <div class="lesson-heading">
+          <div><div class="eyebrow dark-eyebrow">MODUL PEMBELAJARAN</div><h2>Materi Teks Berita</h2><p>Pelajari setiap bab secara berurutan. Gunakan kolom pencarian untuk menemukan topik tertentu.</p></div>
+          <div class="lesson-stamp">BAHASA<br>INDONESIA<br><b>XI</b></div>
+        </div>
+
+        <article class="chapter" id="bab1" data-title="Memahami teks berita">
+          <div class="chapter-top"><span class="chapter-no">BAB 01</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Memahami Teks Berita</h2>
+          <p class="lead">Teks berita adalah teks yang berisi laporan mengenai peristiwa atau kejadian nyata yang disampaikan kepada masyarakat melalui media massa.</p>
+          <div class="info-grid">
+            <div class="info-card"><span class="info-icon">🎯</span><h3>Tujuan</h3><p>Memberikan informasi, menambah pengetahuan, mengedukasi, meningkatkan kesadaran, dan membantu masyarakat memahami suatu peristiwa.</p></div>
+            <div class="info-card"><span class="info-icon">📡</span><h3>Media penyampaian</h3><p>Media cetak (koran/majalah), elektronik (televisi/radio), dan digital (portal berita/situs daring).</p></div>
+          </div>
+          <h3>Fungsi teks berita</h3>
+          <ul class="check-list">
+            <li><b>Informatif:</b> memberikan informasi kepada masyarakat.</li>
+            <li><b>Edukatif:</b> menambah pengetahuan dan wawasan.</li>
+            <li><b>Kontrol sosial:</b> membantu mengawasi persoalan dan kebijakan publik.</li>
+            <li><b>Dokumentatif:</b> menjadi catatan suatu peristiwa.</li>
+            <li><b>Interpretatif:</b> membantu pembaca memahami peristiwa melalui penjelasan yang relevan.</li>
+          </ul>
+          <h3>Ciri-ciri teks berita</h3>
+          <div class="tag-cloud"><span>Faktual</span><span>Aktual</span><span>Objektif</span><span>Jelas</span><span>Lengkap</span><span>Sistematis</span><span>Menarik</span><span>Terpercaya</span><span>Bahasa baku</span></div>
+          <div class="callout"><b>Ingat perbedaannya!</b><br><b>Faktual</b> = berdasarkan fakta/kenyataan. <b>Aktual</b> = baru atau masih relevan. <b>Objektif</b> = tidak dipengaruhi kepentingan atau pendapat pribadi.</div>
+          <h3>Syarat berita yang baik</h3>
+          <p>Berita harus benar, lengkap, berimbang, jelas, menarik, aktual, serta memiliki sumber yang dapat dipertanggungjawabkan.</p>
+        </article>
+
+        <article class="chapter" id="bab2" data-title="Unsur 5W + 1H">
+          <div class="chapter-top"><span class="chapter-no">BAB 02</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Unsur-Unsur Berita: 5W + 1H</h2>
+          <p class="lead">Unsur berita adalah komponen informasi yang membantu pembaca memahami suatu peristiwa secara lengkap.</p>
+          <div class="wh-grid">
+            <div><b>WHAT</b><strong>Apa?</strong><p>Peristiwa yang terjadi.</p></div>
+            <div><b>WHO</b><strong>Siapa?</strong><p>Orang atau pihak yang terlibat.</p></div>
+            <div><b>WHEN</b><strong>Kapan?</strong><p>Waktu terjadinya peristiwa.</p></div>
+            <div><b>WHERE</b><strong>Di mana?</strong><p>Tempat atau lokasi kejadian.</p></div>
+            <div><b>WHY</b><strong>Mengapa?</strong><p>Alasan atau penyebab peristiwa.</p></div>
+            <div><b>HOW</b><strong>Bagaimana?</strong><p>Proses atau kronologi kejadian.</p></div>
+          </div>
+          <h3>Contoh penerapan</h3>
+          <div class="example-quote">“Pada Senin pagi, 23 November 2026, siswa SMA Nusantara melaksanakan kegiatan penghijauan di halaman sekolah. Kegiatan tersebut diikuti 150 siswa dan didampingi para guru untuk meningkatkan kepedulian terhadap lingkungan. Para siswa menanam berbagai jenis pohon.”</div>
+          <div class="table-wrap"><table><thead><tr><th>Unsur</th><th>Jawaban dari berita</th></tr></thead><tbody>
+            <tr><td>What</td><td>Kegiatan penghijauan.</td></tr><tr><td>Who</td><td>150 siswa dan para guru.</td></tr><tr><td>When</td><td>Senin pagi, 23 November 2026.</td></tr><tr><td>Where</td><td>Halaman SMA Nusantara.</td></tr><tr><td>Why</td><td>Meningkatkan kepedulian terhadap lingkungan.</td></tr><tr><td>How</td><td>Menanam berbagai jenis pohon.</td></tr>
+          </tbody></table></div>
+          <div class="callout warning"><b>Tips ujian:</b> Saat diminta menentukan unsur berita, ambil jawaban yang benar-benar terdapat dalam teks. Jangan menambahkan informasi yang tidak disebutkan.</div>
+        </article>
+
+        <article class="chapter" id="bab3" data-title="Struktur teks berita">
+          <div class="chapter-top"><span class="chapter-no">BAB 03</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Struktur Teks Berita</h2>
+          <p class="lead">Struktur berita menyusun informasi agar pembaca dapat memahami peristiwa dari informasi terpenting menuju informasi tambahan.</p>
+          <div class="structure">
+            <div class="structure-block headline"><span>01</span><div><b>Judul / Headline</b><p>Menggambarkan inti atau pokok peristiwa. Harus singkat, jelas, menarik, dan tidak menyesatkan.</p></div></div>
+            <div class="structure-block lead-block"><span>02</span><div><b>Teras / Lead</b><p>Bagian pembuka yang memuat inti berita dan informasi paling penting. Biasanya terdapat pada paragraf pertama.</p></div></div>
+            <div class="structure-block body-block"><span>03</span><div><b>Tubuh / Body</b><p>Menjelaskan peristiwa secara lebih lengkap: kronologi, keterangan narasumber, data, dan detail pendukung.</p></div></div>
+            <div class="structure-block leg"><span>04</span><div><b>Ekor / Leg</b><p>Memuat informasi tambahan yang tingkat kepentingannya lebih rendah dibanding bagian awal.</p></div></div>
+          </div>
+          <div class="callout"><b>Catatan istilah:</b> Dalam beberapa buku, struktur berita juga diringkas menjadi orientasi berita, peristiwa, dan sumber berita. Ikuti istilah yang digunakan guru atau buku pelajaranmu.</div>
+        </article>
+
+        <article class="chapter" id="bab4" data-title="Pola penulisan berita">
+          <div class="chapter-top"><span class="chapter-no">BAB 04</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Pola Penulisan Berita</h2>
+          <h3>1. Piramida terbalik (inverted pyramid)</h3>
+          <p>Informasi paling penting ditempatkan di awal, kemudian diikuti detail dan informasi tambahan yang tingkat kepentingannya lebih rendah.</p>
+          <div class="pyramid"><div class="pyramid-top">INFORMASI PALING PENTING</div><div class="pyramid-mid">PENJELASAN & DETAIL</div><div class="pyramid-bottom">INFORMASI TAMBAHAN</div></div>
+          <p>Tujuannya agar pembaca segera memperoleh inti berita dan penyunting dapat memangkas bagian akhir tanpa menghilangkan informasi utama.</p>
+          <h3>2. Pola kronologis</h3><p>Informasi disampaikan berdasarkan urutan waktu terjadinya peristiwa: pertama, kemudian, selanjutnya, dan terakhir.</p>
+          <h3>3. Pola sebab-akibat</h3><p>Berita menjelaskan hubungan penyebab dan dampak suatu peristiwa. Contoh: hujan deras menyebabkan sungai meluap sehingga rumah warga tergenang.</p>
+        </article>
+
+        <article class="chapter" id="bab5" data-title="Kaidah kebahasaan teks berita">
+          <div class="chapter-top"><span class="chapter-no">BAB 05</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Kaidah Kebahasaan Teks Berita</h2>
+          <p class="lead">Kaidah kebahasaan adalah ciri penggunaan bahasa dalam teks berita. Pahami contoh agar mudah mengenalinya dalam soal.</p>
+          <div class="language-list">
+            <div><b>01 · Bahasa baku</b><p>Mengikuti kaidah bahasa Indonesia. Contoh: aktivitas, risiko, izin, nomor, analisis, sekadar, imbauan, apotek, praktik, nasihat.</p></div>
+            <div><b>02 · Kata kerja pewarta</b><p>Kata untuk melaporkan perkataan narasumber: mengatakan, menjelaskan, menyampaikan, mengungkapkan, menuturkan, melaporkan, menegaskan.</p><small>Contoh: Kepala sekolah <u>menjelaskan</u> bahwa kegiatan akan dilaksanakan setiap tahun.</small></div>
+            <div><b>03 · Kata kerja mental</b><p>Menggambarkan respons, sikap, perasaan, atau proses pemikiran: merasa, mengharapkan, menduga, memikirkan, menilai, memahami.</p><small>Contoh: Warga <u>mengharapkan</u> pemerintah segera memperbaiki jalan.</small></div>
+            <div><b>04 · Konjungsi temporal</b><p>Kata penghubung waktu/urutan: kemudian, setelah itu, sebelumnya, selanjutnya, ketika, sejak, sebelum, sesudah.</p></div>
+            <div><b>05 · Konjungsi kausalitas</b><p>Kata penghubung sebab-akibat: karena, sebab, sehingga, akibatnya, oleh karena itu, dengan demikian.</p></div>
+            <div><b>06 · Keterangan waktu dan tempat</b><p>Waktu: Senin pagi, pukul 07.00 WIB. Tempat: di Jombang, di halaman sekolah, di balai desa.</p></div>
+            <div><b>07 · Kalimat langsung</b><p>Mengutip ucapan narasumber secara langsung dan menggunakan tanda petik. Contoh: Ia berkata, “Kami siap membantu.”</p></div>
+            <div><b>08 · Kalimat tidak langsung</b><p>Menyampaikan kembali ucapan tanpa mengutip persis dan tanpa tanda petik. Contoh: Ia mengatakan bahwa mereka siap membantu.</p></div>
+            <div><b>09 · Kata denotatif</b><p>Kata bermakna sebenarnya/lugas. Contoh: rumah terbakar, sungai meluap, pohon tumbang.</p></div>
+            <div><b>10 · Kalimat efektif</b><p>Kalimat yang tepat, jelas, hemat, dan tidak bertele-tele. Hindari pemborosan kata seperti “para siswa-siswa semuanya”.</p></div>
+          </div>
+          <h3>Kalimat langsung dan tidak langsung</h3>
+          <div class="compare-grid"><div><span>LANGSUNG</span><p>Kepala sekolah berkata, <b>“Kami akan mengadakan kegiatan.”</b></p><small>Mengutip ucapan asli, memakai tanda petik.</small></div><div><span>TIDAK LANGSUNG</span><p>Kepala sekolah mengatakan <b>bahwa mereka akan mengadakan kegiatan.</b></p><small>Melaporkan kembali ucapan, tanpa tanda petik.</small></div></div>
+        </article>
+
+        <article class="chapter" id="bab6" data-title="Fakta dan opini">
+          <div class="chapter-top"><span class="chapter-no">BAB 06</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Fakta dan Opini</h2>
+          <div class="compare-grid">
+            <div><span>FAKTA</span><h3>Informasi yang dapat dibuktikan</h3><ul><li>Sesuai kenyataan.</li><li>Dapat diverifikasi.</li><li>Bersifat objektif.</li><li>Didukung bukti atau data.</li></ul><p class="mini-example">“Sebanyak 150 siswa mengikuti kegiatan pada Senin pagi.”</p></div>
+            <div><span>OPINI</span><h3>Pendapat atau penilaian</h3><ul><li>Bersifat subjektif.</li><li>Dapat berbeda antarorang.</li><li>Berisi pandangan atau penilaian.</li><li>Belum tentu menjadi kebenaran objektif.</li></ul><p class="mini-example">“Menurut saya, kegiatan itu sangat bermanfaat.”</p></div>
+          </div>
+          <div class="callout warning"><b>Jebakan soal:</b> Angka dan tanggal tidak otomatis menjadikan kalimat sebagai fakta. Informasinya tetap harus dapat diverifikasi. Opini juga bisa didukung fakta, tetapi penilaiannya tetap merupakan opini.</div>
+        </article>
+
+        <article class="chapter" id="bab7" data-title="Nilai berita news value">
+          <div class="chapter-top"><span class="chapter-no">BAB 07</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Nilai Berita (News Value)</h2>
+          <p>Nilai berita adalah ukuran penting atau menariknya suatu peristiwa untuk diberitakan kepada masyarakat.</p>
+          <div class="table-wrap"><table><thead><tr><th>Nilai</th><th>Pengertian</th><th>Contoh</th></tr></thead><tbody>
+            <tr><td><b>Aktualitas</b></td><td>Peristiwa terbaru.</td><td>Bencana yang baru terjadi.</td></tr>
+            <tr><td><b>Faktualitas</b></td><td>Berdasarkan kenyataan.</td><td>Hasil penelitian resmi.</td></tr>
+            <tr><td><b>Significance / penting</b></td><td>Memengaruhi kepentingan masyarakat.</td><td>Kebijakan pendidikan.</td></tr>
+            <tr><td><b>Proximity</b></td><td>Kedekatan geografis atau emosional.</td><td>Peristiwa di daerah sendiri.</td></tr>
+            <tr><td><b>Prominence</b></td><td>Melibatkan tokoh terkenal/penting.</td><td>Kunjungan kepala negara.</td></tr>
+            <tr><td><b>Consequence</b></td><td>Memiliki dampak besar.</td><td>Perubahan harga kebutuhan pokok.</td></tr>
+            <tr><td><b>Conflict</b></td><td>Mengandung pertentangan.</td><td>Perselisihan antarkelompok.</td></tr>
+            <tr><td><b>Unusualness</b></td><td>Unik atau tidak biasa.</td><td>Fenomena alam langka.</td></tr>
+            <tr><td><b>Human interest</b></td><td>Menyentuh sisi kemanusiaan.</td><td>Kisah perjuangan seseorang.</td></tr>
+          </tbody></table></div>
+        </article>
+
+        <article class="chapter" id="bab8" data-title="Jenis-jenis berita">
+          <div class="chapter-top"><span class="chapter-no">BAB 08</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Jenis-Jenis Berita</h2>
+          <h3>Berdasarkan bidang atau isi</h3>
+          <div class="tag-cloud large"><span>Berita peristiwa</span><span>Politik</span><span>Ekonomi</span><span>Pendidikan</span><span>Olahraga</span><span>Iptek</span><span>Budaya</span><span>Lingkungan</span></div>
+          <h3>Berdasarkan sifat dan penyajian</h3>
+          <div class="type-cards">
+            <div><b>Straight News</b><p>Berita langsung, singkat, padat, dan jelas mengenai peristiwa.</p></div>
+            <div><b>Depth News</b><p>Berita mendalam yang membahas latar belakang, penyebab, dan dampak.</p></div>
+            <div><b>Investigation News</b><p>Berita hasil penyelidikan mendalam untuk mengungkap fakta yang belum diketahui.</p></div>
+            <div><b>Interpretative News</b><p>Berita yang menyertakan penjelasan atau interpretasi berdasarkan fakta.</p></div>
+            <div><b>Opinion News</b><p>Berita yang memuat pendapat atau pandangan tokoh/ahli.</p></div>
+            <div><b>Feature News</b><p>Berita kisah dengan gaya lebih menarik dan mendalam, sering menonjolkan sisi kemanusiaan.</p></div>
+          </div>
+        </article>
+
+        <article class="chapter" id="bab9" data-title="Sumber berita dan narasumber">
+          <div class="chapter-top"><span class="chapter-no">BAB 09</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Sumber Berita dan Narasumber</h2>
+          <p><b>Sumber berita</b> adalah segala sesuatu yang menjadi asal informasi untuk membuat berita. Sumbernya dapat berupa saksi mata, korban, pejabat, lembaga resmi, dokumen, penelitian, pengamatan, dan data statistik.</p>
+          <p><b>Narasumber</b> adalah orang yang memberikan informasi, keterangan, atau pendapat mengenai suatu peristiwa. Contohnya kepala sekolah, polisi, dokter, guru, saksi mata, dan ahli.</p>
+          <h3>Tahapan wawancara</h3>
+          <ol><li>Menentukan topik wawancara.</li><li>Menentukan narasumber yang tepat.</li><li>Menyusun daftar pertanyaan.</li><li>Menyiapkan alat pencatat/perekam dengan izin.</li><li>Melaksanakan wawancara.</li><li>Mencatat informasi penting.</li><li>Memeriksa kembali kebenaran informasi.</li></ol>
+          <h3>Kriteria narasumber yang baik</h3>
+          <ul class="check-list"><li>Menguasai informasi yang ditanyakan.</li><li>Memiliki pengetahuan atau pengalaman terkait.</li><li>Dapat dipercaya.</li><li>Bersedia memberikan informasi.</li><li>Memberikan keterangan secara jelas.</li></ul>
+        </article>
+
+        <article class="chapter" id="bab10" data-title="Langkah menyusun teks berita">
+          <div class="chapter-top"><span class="chapter-no">BAB 10</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Langkah-Langkah Menyusun Teks Berita</h2>
+          <ol class="number-steps">
+            <li><b>Menentukan topik</b><p>Pilih peristiwa penting, menarik, dan memiliki nilai berita.</p></li>
+            <li><b>Mengumpulkan informasi</b><p>Gunakan observasi, wawancara, dokumentasi, dan sumber resmi.</p></li>
+            <li><b>Mengidentifikasi 5W + 1H</b><p>Pastikan unsur apa, siapa, kapan, di mana, mengapa, dan bagaimana tersedia.</p></li>
+            <li><b>Memeriksa kebenaran</b><p>Verifikasi nama, waktu, lokasi, angka, kronologi, dan data pendukung.</p></li>
+            <li><b>Menyusun kerangka</b><p>Urutkan informasi berdasarkan tingkat kepentingannya.</p></li>
+            <li><b>Menulis berita</b><p>Susun judul, teras, tubuh, dan ekor bila diperlukan.</p></li>
+            <li><b>Menyunting</b><p>Periksa ejaan, tanda baca, pilihan kata, kalimat efektif, dan fakta.</p></li>
+            <li><b>Mempublikasikan</b><p>Terbitkan melalui media cetak, elektronik, atau digital setelah pemeriksaan.</p></li>
+          </ol>
+        </article>
+
+        <article class="chapter" id="bab11" data-title="Menyunting dan menganalisis teks berita">
+          <div class="chapter-top"><span class="chapter-no">BAB 11</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Menyunting dan Menganalisis Berita</h2>
+          <p>Penyuntingan adalah proses memperbaiki teks agar sesuai dengan kaidah bahasa, sistematika, dan ketepatan informasi.</p>
+          <h3>Hal yang diperiksa</h3><ul class="check-list"><li>Ketepatan dan kelengkapan isi.</li><li>Kelengkapan unsur berita.</li><li>Bahasa baku dan kalimat efektif.</li><li>Ejaan dan tanda baca.</li><li>Kejelasan sumber informasi.</li></ul>
+          <h3>Penulisan kata depan di dan awalan di-</h3>
+          <div class="compare-grid"><div><span>KATA DEPAN DI · TERPISAH</span><p>di sekolah<br>di rumah<br>di halaman<br>di Jombang</p><small>Menunjukkan tempat.</small></div><div><span>AWALAN DI- · SERANGKAI</span><p>dibaca<br>ditulis<br>dikerjakan<br>diberitakan</p><small>Membentuk kata kerja pasif.</small></div></div>
+          <h3>Penggunaan tanda baca</h3>
+          <ul><li><b>Titik (.):</b> akhir kalimat pernyataan.</li><li><b>Koma (,):</b> memisahkan unsur tertentu dalam kalimat.</li><li><b>Tanda petik (“...”):</b> mengapit petikan langsung.</li><li><b>Huruf kapital:</b> awal kalimat, nama orang, tempat, lembaga, hari, dan bulan sesuai kaidah.</li></ul>
+        </article>
+
+        <article class="chapter" id="bab12" data-title="Perbedaan berita dengan teks lain">
+          <div class="chapter-top"><span class="chapter-no">BAB 12</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Membedakan Berita dengan Teks Lain</h2>
+          <div class="table-wrap"><table><thead><tr><th>Jenis teks</th><th>Tujuan utama</th><th>Ciri khas</th></tr></thead><tbody>
+            <tr><td><b>Berita</b></td><td>Menyampaikan informasi peristiwa nyata.</td><td>Faktual dan aktual.</td></tr>
+            <tr><td>Eksposisi</td><td>Menjelaskan/menyampaikan pendapat dengan argumen.</td><td>Tesis, argumen, penegasan ulang.</td></tr>
+            <tr><td>Eksplanasi</td><td>Menjelaskan proses fenomena.</td><td>Proses atau sebab-akibat.</td></tr>
+            <tr><td>Narasi</td><td>Menceritakan rangkaian peristiwa.</td><td>Alur dan kronologi.</td></tr>
+            <tr><td>Deskripsi</td><td>Menggambarkan objek.</td><td>Rincian ciri objek.</td></tr>
+            <tr><td>Prosedur</td><td>Menjelaskan cara melakukan sesuatu.</td><td>Langkah-langkah.</td></tr>
+            <tr><td>Editorial</td><td>Menyampaikan pandangan redaksi.</td><td>Pendapat dan argumentasi redaksi.</td></tr>
+          </tbody></table></div>
+        </article>
+
+        <article class="chapter" id="bab13" data-title="Contoh teks berita dan analisis">
+          <div class="chapter-top"><span class="chapter-no">BAB 13</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Contoh Teks Berita dan Analisis</h2>
+          <div class="news-sample">
+            <div class="news-label">CONTOH BERITA PEMBELAJARAN</div>
+            <h3>Siswa SMA Nusantara Gelar Kegiatan Penghijauan Lingkungan Sekolah</h3>
+            <p class="news-lead"><b>Jombang</b> — Sebanyak 150 siswa SMA Nusantara mengikuti kegiatan penghijauan lingkungan sekolah pada Senin, 23 November 2026. Kegiatan tersebut dilaksanakan untuk meningkatkan kesadaran siswa terhadap pentingnya menjaga kelestarian lingkungan.</p>
+            <p>Kegiatan dimulai pukul 07.00 WIB dengan pengarahan dari kepala sekolah. Setelah itu, para siswa dibagi menjadi beberapa kelompok untuk menanam berbagai jenis pohon di sekitar halaman sekolah.</p>
+            <p>Kepala SMA Nusantara menjelaskan bahwa kegiatan penghijauan merupakan salah satu bentuk pendidikan karakter yang bertujuan menumbuhkan kepedulian terhadap lingkungan.</p>
+            <p>“Kami berharap para siswa tidak hanya memahami pentingnya menjaga lingkungan melalui teori, tetapi juga menerapkannya dalam kehidupan sehari-hari,” ujarnya.</p>
+            <p>Selain menanam pohon, para siswa juga membersihkan lingkungan sekolah dan mengumpulkan sampah untuk dipilah berdasarkan jenisnya.</p>
+            <p>Pihak sekolah berencana menjadikan kegiatan penghijauan sebagai program rutin untuk menjaga kebersihan dan kelestarian lingkungan sekolah.</p>
+          </div>
+          <h3>Analisis unsur dan kebahasaan</h3>
+          <div class="table-wrap"><table><thead><tr><th>Aspek</th><th>Jawaban</th></tr></thead><tbody>
+            <tr><td>What</td><td>Kegiatan penghijauan.</td></tr><tr><td>Who</td><td>150 siswa dan kepala sekolah.</td></tr><tr><td>When</td><td>Senin, 23 November 2026.</td></tr><tr><td>Where</td><td>SMA Nusantara, Jombang.</td></tr><tr><td>Why</td><td>Meningkatkan kesadaran menjaga lingkungan.</td></tr><tr><td>How</td><td>Menanam pohon, membersihkan lingkungan, memilah sampah.</td></tr><tr><td>Jenis</td><td>Berita pendidikan dan lingkungan.</td></tr><tr><td>Kata kerja pewarta</td><td>Menjelaskan.</td></tr><tr><td>Konjungsi temporal</td><td>Setelah itu.</td></tr><tr><td>Kalimat langsung</td><td>“Kami berharap para siswa...”</td></tr>
+          </tbody></table></div>
+          <div class="callout warning"><b>Catatan:</b> Contoh berita ini bersifat ilustratif untuk latihan analisis, bukan laporan peristiwa yang diverifikasi.</div>
+        </article>
+
+        <article class="chapter" id="bab14" data-title="Jebakan soal ujian">
+          <div class="chapter-top"><span class="chapter-no">BAB 14</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Hal-Hal yang Sering Menjadi Jebakan Soal</h2>
+          <div class="trap-list">
+            <p><b>Aktual ≠ faktual.</b> Aktual berkaitan dengan kebaruan; faktual berkaitan dengan kenyataan.</p>
+            <p><b>Headline ≠ lead.</b> Headline adalah judul; lead adalah teras berita.</p>
+            <p><b>Lead ≠ body.</b> Lead memuat inti; body menguraikan detail.</p>
+            <p><b>Narasumber ≠ pewawancara.</b> Narasumber memberi informasi; pewawancara mengajukan pertanyaan.</p>
+            <p><b>Temporal ≠ kausalitas.</b> Temporal menunjukkan waktu; kausalitas menunjukkan sebab-akibat.</p>
+            <p><b>Fakta ≠ opini.</b> Fakta dapat diverifikasi; opini berupa pandangan atau penilaian.</p>
+            <p><b>Straight news ≠ depth news.</b> Straight news langsung dan ringkas; depth news membahas lebih mendalam.</p>
+            <p><b>Di rumah ≠ ditulis.</b> Kata depan di dipisah; awalan di- dirangkai.</p>
+          </div>
+        </article>
+
+        <article class="chapter" id="bab15" data-title="Hafalan cepat teks berita">
+          <div class="chapter-top"><span class="chapter-no">BAB 15</span><button class="mark-read">Tandai selesai ○</button></div>
+          <h2>Hafalan Cepat Sebelum Ujian</h2>
+          <div class="memorize-grid">
+            <div><b>TEKS BERITA</b><p>Laporan peristiwa nyata.</p></div><div><b>FAKTUAL</b><p>Berdasarkan kenyataan.</p></div>
+            <div><b>AKTUAL</b><p>Terbaru atau relevan.</p></div><div><b>OBJEKTIF</b><p>Tidak memihak.</p></div>
+            <div><b>5W + 1H</b><p>Apa, siapa, kapan, di mana, mengapa, bagaimana.</p></div><div><b>HEADLINE</b><p>Judul berita.</p></div>
+            <div><b>LEAD</b><p>Teras/pembuka berita.</p></div><div><b>BODY</b><p>Tubuh/penjelasan berita.</p></div>
+            <div><b>LEG</b><p>Ekor/informasi tambahan.</p></div><div><b>FAKTA</b><p>Pernyataan yang dapat dibuktikan.</p></div>
+            <div><b>OPINI</b><p>Pendapat atau penilaian.</p></div><div><b>TEMPORAL</b><p>Kemudian, setelah itu.</p></div>
+            <div><b>KAUSALITAS</b><p>Karena, sehingga.</p></div><div><b>PEWARTA</b><p>Mengatakan, menjelaskan.</p></div>
+            <div><b>NARASUMBER</b><p>Orang pemberi informasi.</p></div><div><b>PIRAMIDA TERBALIK</b><p>Informasi terpenting di awal.</p></div>
+          </div>
+        </article>
+
+        <section class="quiz-section" id="latihan">
+          <div class="quiz-head"><div><div class="eyebrow">UJI PEMAHAMAN</div><h2>Latihan Soal UAS</h2><p>15 soal pilihan ganda. Pilih satu jawaban terbaik, lalu periksa hasil dan pembahasannya.</p></div><div class="quiz-badge">15<br><small>SOAL</small></div></div>
+          <div class="quiz-progress"><span id="quizProgress"></span></div>
+          <div class="quiz-meta"><span id="questionCounter">Soal 1 dari 15</span><span id="answeredCounter">0 dijawab</span></div>
+          <div id="quizContainer"></div>
+          <div class="quiz-controls"><button class="btn btn-ghost" id="prevQuestion" disabled>← Sebelumnya</button><button class="btn btn-primary" id="nextQuestion">Berikutnya →</button></div>
+          <div class="quiz-submit-wrap"><button class="btn btn-submit" id="submitQuiz">Periksa Jawaban</button><p id="quizHint">Jawab seluruh soal untuk melihat nilai dan pembahasan.</p></div>
+          <div id="quizResult" class="quiz-result" hidden></div>
+        </section>
+
+        <section class="last-note">
+          <div class="last-icon">✦</div><div><h2>Persiapan terakhir</h2><p>Utamakan memahami 5W + 1H, struktur berita, kaidah kebahasaan, fakta-opini, serta nilai berita. Jangan hanya menghafal definisi—latih juga kemampuan menganalisis teks.</p><b>Semangat belajar dan semoga UAS-mu lancar!</b></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#beranda"><span class="brand-mark">RB</span><span>RUANG<span class="brand-light">BELAJAR</span></span></a><p>Modul belajar Bahasa Indonesia · Materi Teks Berita · Kelas XI</p><a href="#beranda" class="back-top">Kembali ke atas ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
